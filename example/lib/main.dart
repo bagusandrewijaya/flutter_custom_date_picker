@@ -86,33 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
               SingleChildScrollView(
                 child: Column(
                   children: [
-                    const SizedBox(height: 50),
-                    const Text("The decomposed widgets example :"),
-                    const SizedBox(height: 20),
-                    const Text("The date range picker widget:"),
-                    const SizedBox(height: 20),
-                    SizedBox(
-                      width: 560,
-                      child: DateRangePickerWidget(
-                        maximumDateRangeLength: 10,
-                        minimumDateRangeLength: 3,
-                        disabledDates: [DateTime(2023, 11, 20)],
-                        initialDisplayedDate: DateTime(2023, 11, 20),
-                        onDateRangeChanged: print,
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-                    const Text("The month selector:"),
-                    SizedBox(
-                      width: 450,
-                      child: MonthSelectorAndDoubleIndicator(
-                        currentMonth: DateTime(2023, 11, 20),
-                        onNext: () => debugPrint("Next"),
-                        onPrevious: () => debugPrint("Previous"),
-                        nextMonth: DateTime(2023, 12, 20),
-                      ),
-                    ),
-                    const SizedBox(height: 20),
+                 
                     const Text("A button to open the picker:"),
                     TextButton(
                       onPressed: () => showDateRangePickerDialog(

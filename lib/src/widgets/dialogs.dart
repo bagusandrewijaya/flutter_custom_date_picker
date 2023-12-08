@@ -98,6 +98,7 @@ class _DateRangePickerDialogState extends State<DateRangePickerDialog> {
     return Material(
       color: Colors.transparent,
       child: Container(
+      margin: EdgeInsets.all(32),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(8),
